@@ -27,7 +27,7 @@ module PivotTable
           :header     => row_headers[index],
           :data       => data,
           :value_name => value_name,
-          :ortogonal_headers => column_headers
+          :orthogonal_headers => column_headers
         )
       end
     end
@@ -39,7 +39,7 @@ module PivotTable
           :header           => column_headers[index],
           :data             => data,
           :value_name       => value_name,
-          :ortogonal_headers => row_headers
+          :orthogonal_headers => row_headers
         )
       end
     end
