@@ -2,6 +2,8 @@ module PivotTable
   class Row
     include CellCollection
 
-    alias_method :column_data, :find_data
+    def column_data column_header
+      find_data column_header
+    end
   end
 end
