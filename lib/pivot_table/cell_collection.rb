@@ -17,5 +17,13 @@ module PivotTable
       data.inject(0) { |t, x| t + (x ? x.send(value_name) : 0) }
     end
 
+  private
+
+    def find_data by_header_name
+      data[
+        orthogonal_headers.find_index{|header| by_header_name.to_s == header.to_s}
+      ] rescue nil
+    end
+
   end
 end
