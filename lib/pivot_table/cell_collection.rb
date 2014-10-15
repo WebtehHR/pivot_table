@@ -1,7 +1,7 @@
 module PivotTable
   module CellCollection
 
-    ACCESSORS = [:header, :data, :value_name]
+    ACCESSORS = [:header, :data, :value_name, :orthogonal_headers]
 
     ACCESSORS.each do |a|
       self.send(:attr_accessor, a)
